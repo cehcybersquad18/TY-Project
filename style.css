@@ -6,19 +6,16 @@
       10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
 
 -----2 colours 
+
+
 - priamry : #CADCFC
-
-
 ----shadows 
 
 
 
 */
 
-
-
-
-*{
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -27,42 +24,122 @@
 html {
   /* font size :10px; */
   /* 10 px / 16px = 0.625 = 62.5%*/
- /* percentage of users browser font size settings*/
+  /* percentage of users browser font size settings*/
   font-size: 62.5%;
-
 }
 
-body{
-  font-family: 'Poppins'; 
+body {
+  height: 100vh;
+  font-family: "Poppins";
   line-height: 1;
-  font-weight: 400 ;
-  color: grey;
+  font-weight: 400;
+  background-color: #e88d67;
+
+  padding: 2rem;
 }
-.hero{
+
+.section-hero {
+  width: 100%;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  gap: 10rem;
+
+  background-color: #e88d67;
+}
+
+.hero {
   max-width: 130rem;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 1fr 1fr ;
+  grid-template-columns: 1fr 1fr;
   align-items: center;
+  padding: 0 3.2rem;
 }
 
-.heading-primary  {
+.heading-primary {
+  width: 95%;
   font-size: 5.2rem;
-  font weight : 700;
-  line-height: 1.05 ;
+  font-weight: bolder;
+  line-height: 1.05;
   color: #333;
   letter-spacing: -0.5px;
   margin-bottom: 3.2rem;
 }
 
-.hero-description{
+.hero-description {
   font-size: 2rem;
   line-height: 1.6;
   margin-bottom: 4.8rem;
 }
 
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #e88d67;
+  height: 9.6rem;
+  padding: 0 4.8rem;
+}
 
-.hero-img{
-  width: 100%;
- 
+.logo {
+  height: 5rem;
+}
+
+.main-nav-lsit {
+  display: flex;
+  gap: 3.2rem;
+  list-style: none;
+}
+
+.main-nav-link:link,
+.main-nav-link:visited {
+  font-size: 1.8rem;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: all 0.3s;
+}
+
+.main-nav-link:hover,
+.main-nav-link:active {
+  color: #e35705;
+}
+,
+#hero-section-btns {
+  width: 50%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 3rem;
+}
+
+.start-btn {
+  border-radius: 1rem;
+  padding: 1rem;
+  font-size: 1.8rem;
+  text-decoration: none;
+  color: black;
+  background-color: #9a8cff;
+}
+
+.learn-more-btn {
+  border-radius: 1rem;
+  padding: 1rem;
+  font-size: 1.8rem;
+  text-decoration: none;
+  color: black;
+  background-color: white;
+}
+
+.hero-img {
+  width: 50rem;
+}
+
+.hero-text-box {
+  width: 70rem;
 }
