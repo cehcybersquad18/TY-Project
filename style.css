@@ -15,34 +15,6 @@
 
 */
 
-.logo {
-  height: 5rem;
-  mix-blend-mode: multiply;
-}
-
-.main-nav-list {
-  display: flex;
-
-  list-style: none;
-  gap: 3.2rem;
-
-  color: white;
-}
-
-.main-nav-link:link,
-.main-nav-link:visited {
-  font-size: 1.8rem;
-  text-decoration: none;
-  color: black;
-  font-weight: 500;
-  transition: all 0.3s;
-}
-
-.main-nav-link:hover,
-.main-nav-link:active {
-  color: #e35705;
-}
-
 .heading-primary,
 .heading-secondary,
 .heading-tertiary {
@@ -146,3 +118,61 @@
   align-items: center;
 }
 
+.section-meals {
+  padding: 9.6rem 0;
+}
+
+.meal {
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.75);
+  border-radius: 11px;
+  overflow: hidden;
+}
+
+.meal-content {
+  padding: 1rem;
+}
+
+.meal-tags {
+  margin-bottom: 1.2rem;
+}
+
+.tag {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  background-color: #51cf66;
+  border-radius: 100px;
+  margin-bottom: 1.8rem;
+}
+
+.tag1 {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  background-color: #e90f0f;
+  border-radius: 100px;
+  margin-bottom: 1.8rem;
+}
+
+.meal-img {
+  width: 100%;
+}
+
+.meal-title {
+  font-size: 2.1rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 2.9rem;
+}
+
+.meal-attributes {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+}
+.meal-attribute {
+  font-size: 1.8rem;
+}
