@@ -16,7 +16,7 @@ body {
   font-family: "Poppins";
   line-height: 1;
   font-weight: 400;
-  background-color: #e88d67;
+  background-color: EEEEE;
   padding: 2rem;
 
   display: flex;
@@ -66,7 +66,7 @@ body {
 
   gap: 10rem;
 
-  background-color: #e88d67;
+  background-color: EEEEE;
 }
 
 .hero {
@@ -95,7 +95,7 @@ body {
 .main-nav-list {
   display: flex;
 
-  list-style: none;
+  list-style: none; 
   gap: 3.2rem;
 
   color: white;

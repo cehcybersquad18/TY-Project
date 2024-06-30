@@ -33,7 +33,9 @@
 .heading-secondary {
   font-size: 4.4rem;
   line-height: 1.2;
-  margin-bottom: 9.6rem;
+  margin-bottom: 9.4rem;
+  text-align: center;
+  
 }
 
 .heading-tertiary {
@@ -44,12 +46,13 @@
 
 .subheading {
   display: block;
-  font-size: 1.6rem;
+  font-size: 2.5rem;
   font-weight: 500;
   margin-bottom: 1.6rem;
   color: rgb(45, 63, 255);
   text-transform: uppercase;
   letter-spacing: 0.75px;
+  text-align: center;
 }
 
 .start-btn {
@@ -58,7 +61,7 @@
   font-size: 1.8rem;
   text-decoration: none;
   color: black;
-  background-color: #ffffff;
+  background-color: #ffc355;
 }
 
 .learn-more-btn {
@@ -67,7 +70,7 @@
   font-size: 1.8rem;
   text-decoration: none;
   color: black;
-  background-color: white;
+  background-color:#ffc355;
 }
 .btn-full {
   border-radius: 1rem;
@@ -120,6 +123,7 @@
   border-radius: 11px;
   overflow: hidden;
   transition: all 0.4s;
+  width: 125% ;
 }
 
 .meal:hover {
@@ -127,13 +131,13 @@
 }
 
 .meal-content {
-  padding: 1rem;
+  padding: 2.3rem;
 }
-
-.meal-tags {
-  margin-bottom: 1.2rem;
+/*
+.meals-tag {
+  margin-bottom: 0.95rem;
 }
-
+*/
 .tag {
   display: inline-block;
   padding: 0.4rem 0.8rem;
@@ -154,6 +158,16 @@
   margin-bottom: 1.8rem;
 }
 
+.tag2 {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  background-color: #fdee1f;
+  border-radius: 100px;
+  margin-bottom: 1.8rem;
+}
+
 .meal-img {
   width: 100%;
 }
@@ -162,7 +176,7 @@
   font-size: 2.1rem;
   font-weight: 600;
   color: #333;
-  margin-bottom: 2.9rem;
+  margin-bottom: 2.5rem;
 }
 
 .meal-attributes {
@@ -170,6 +184,7 @@
   display: flex;
   flex-direction: column;
   gap: 1.8rem;
+  
 }
 .meal-attribute {
   font-size: 1.8rem;
@@ -244,7 +259,7 @@
   margin-top: 4.8rem;
 }
 
-.feature-icon {
+.feature-icon { 
   color: rgb(9, 255, 0);
   height: 3.2rem;
   width: 3.2rem;
