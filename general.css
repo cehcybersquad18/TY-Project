@@ -114,6 +114,29 @@ body {
 .main-nav-link:active {
   color: #e35705;
 }
+
+.diets {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#list {
+  list-style: none;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+
+  gap: 1.6rem;
+}
+
+
+.diet-category {
+  padding: 5px 10px;
+  border-radius: 20px;
+}
+
 .list {
   list-style: none;
   display: flex;

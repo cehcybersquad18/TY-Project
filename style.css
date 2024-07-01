@@ -7,7 +7,7 @@
 
 -----2 colours 
 
-
+ 
 - priamry : #CADCFC
 ----shadows 
 
@@ -67,7 +67,7 @@
 .learn-more-btn {
   border-radius: 1rem;
   padding: 1.2rem;
-  font-size: 1.8rem;
+  font-size: 1.8rem; 
   text-decoration: none;
   color: black;
   background-color:#ffc355;
@@ -191,7 +191,7 @@
 }
 
 .section-pricing {
-  padding: 9.6rem 0;
+  padding: 2rem 0;
 }
 
 .pricing-plan {
@@ -220,7 +220,7 @@
   font-size: 1.4rem;
   font-weight: 700;
   transform: rotate(45deg);
-  background-color: #f8fc15;
+  background-color:   #ff1717;
   padding: 0.8rem 8rem;
 }
 
