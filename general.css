@@ -13,7 +13,7 @@ html {
 
 body {
   height: 100vh;
-  font-family: "Poppins";
+  font-family: "Rubik", sans-serif;
   line-height: 1;
   font-weight: 400;
   background-color: EEEEE;
@@ -53,6 +53,10 @@ body {
 
 .grid-4-cols {
   grid-template-columns: repeat(4, 1fr);
+}
+
+.grid-5-cols {
+  grid-template-columns: repeat(5, 1fr);
 }
 
 .section-hero {
@@ -144,7 +148,7 @@ body {
   gap: 1.6rem;
 }
 
-.list-item {
+.list-item { 
   font-size: 1.8rem;
   display: flex;
   align-items: center;
@@ -167,5 +171,6 @@ body {
   justify-content: flex-start;
   align-items: center;
   gap: 3rem;
+  font-family: "Rubik", sans-serif;
 }
 
