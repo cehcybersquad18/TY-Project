@@ -1,29 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head> 
+<head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-    rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="general.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/general.css" />
   <title>Nutrifood</title>
-</head> 
+</head>
 
 <body>
   <header class="header">
-    <img src="logo2.png" alt="Nutrifood logo" class="logo" />
+    <a href="#">
+      <img src="img/logo.jpg" alt="Nutrifood logo" class="logo" />
+    </a>
     <nav class="main-nav">
       <ul class="main-nav-list">
         <li><a class="main-nav-link" href="#">How It Works</a></li>
         <li><a class="main-nav-link" href="#">Meals</a></li>
         <li><a class="main-nav-link" href="#">Pricing</a></li>
-        <li><a class="main-nav-link" href="#">Order Today</a></li>
+        <li><a class="main-nav-link" href="signin.html" id="signup-link">Sign Up</a></li>
       </ul>
     </nav>
   </header>
@@ -48,7 +49,7 @@
         </div>
       </div>
       <div class="hero-img-box">
-        <img src="hero.png" class="hero-img"
+        <img src="img/hero.png" class="hero-img"
           alt="Women enjoying the food , meals in storage , food bowls on table" />
       </div>
     </section>
@@ -75,12 +76,12 @@
         </div>
 
         <div class="step-img-box">
-          <img src="app-screen-1.png" alt="app refrences" class="step-img" />
+          <img src="img/app-screen-1.png" alt="app refrences" class="step-img" />
         </div>
 
         <!--2rd step-->
         <div class="step-img-box">
-          <img src="Rajma Chawal.png" alt="meal approving plan" class="step-img" />
+          <img src="img/Rajma Chawal.png" alt="meal approving plan" class="step-img" />
         </div>
 
         <div class="step-text-box">
@@ -103,7 +104,7 @@
           </p>
         </div>
         <div class="step-img-box">
-          <img src="preference selection copy (2).png" alt="app delivery screen" class="step-img" />
+          <img src="img/preference selection copy.png" alt="app delivery screen" class="step-img" />
         </div>
     </section>
 
@@ -117,7 +118,7 @@
 
       <div class="container grid grid-4-cols">
         <div class="meal">
-          <img src="rajma.jpeg" alt="meal 1" class="meal-img" />
+          <img src="img/rajma.jpeg" alt="meal 1" class="meal-img" />
 
           <div class="meal-content">
             <div class="meals-tag">
@@ -134,7 +135,7 @@
 
 
         <div class="meal">
-          <img src="salad.jpeg" alt="meal 2" class="meal-img" />
+          <img src="img/salad.jpeg" alt="meal 2" class="meal-img" />
 
           <div class="meal-content">
             <div class="meals-tag">
@@ -143,7 +144,7 @@
             </div>
             <p class="meal-title">Super Food Salad</p>
             <ul class="meal-attributes">
-              <li class="meal-attribute">650 calories</li>
+              <li class="meal-attribute">460 calories</li>
               <li class="meal-attribute">Nutriscore 83</li>
               <li class="meal-attribute">4.7 rating</li>
             </ul>
@@ -151,7 +152,7 @@
         </div>
 
         <div class="meal">
-          <img src="eggs.jpeg" alt="meal 3" class="meal-img" />
+          <img src="img/eggs.jpeg" alt="meal 3" class="meal-img" />
 
           <div class="meal-content">
             <div class="meals-tag">
@@ -159,7 +160,7 @@
             </div>
             <p class="meal-title">Scrambled Eggs</p>
             <ul class="meal-attributes">
-              <li class="meal-attribute">680 calories</li>
+              <li class="meal-attribute">480 calories</li>
               <li class="meal-attribute">Nutriscore 85</li>
               <li class="meal-attribute">4.9 rating</li>
             </ul>
@@ -167,26 +168,21 @@
         </div>
 
         <div class="meal">
-          <img src="eggs.jpeg" alt="meal 3" class="meal-img" />
+          <img src="img/ChiTikkaSalad.jpeg" alt="meal 3" class="meal-img" />
 
           <div class="meal-content">
             <div class="meals-tag">
               <span class="tag1">Non Vegetarian</span>
+              <span class="tag3">Paleo</span>
             </div>
-            <p class="meal-title">Scrambled Eggs</p>
+            <p class="meal-title">Chi.Tikka Salad</p>
             <ul class="meal-attributes">
-              <li class="meal-attribute">680 calories</li>
-              <li class="meal-attribute">Nutriscore 85</li>
-              <li class="meal-attribute">4.9 rating</li>
+              <li class="meal-attribute">400 calories</li>
+              <li class="meal-attribute">Nutriscore 79</li>
+              <li class="meal-attribute">4.7 rating</li>
             </ul>
           </div>
         </div>
-
-        
-
-
-       
-
       </div>
 
 
@@ -194,19 +190,19 @@
         <h3 class="heading-tertiary">Works with any diet:</h3>
         <ul id="list">
           <li class="list-item">
-            <span class="diet-category" style="background-color: rgb(6, 214, 6);">Vegetarian</span>
+            <span class="diet-category" style="background-color: rgb(6, 214, 6);">VEGETARIAN</span>
           </li>
           <li class="list-item">
-            <span class="diet-category" style="background-color: #EED374;">Paleo</span>
+            <span class="diet-category" style="background-color: #EED374;">PALEO</span>
           </li>
           <li class="list-item">
-            <span class="diet-category" style="background-color: #E8C2D4;">Lactose-Free</span>
+            <span class="diet-category" style="background-color: #E8C2D4;">LACTOSE-FREE</span>
           </li>
           <li class="list-item">
-            <span class="diet-category" style="background-color: #D7BEFF;">Gluton-Free</span>
+            <span class="diet-category" style="background-color: #D7BEFF;">GLUTON-FREE</span>
           </li>
           <li class="list-item">
-            <span class="diet-category" style="background-color: #F39F52;">Kid-Friendly</span>
+            <span class="diet-category" style="background-color: #F39F52;">KID-FRIENDLY</span>
           </li>
         </ul>
       </div>
@@ -244,10 +240,9 @@
           </div>
         </div>
 
-
         <div class="pricing-plan pricing-plan-complete">
           <p class="plan-name">Complete</p>
-          <p class="plan-price"><span>&#8377;</span>2,999</p>
+          <p class="plan-price"><span>&#8377;</span>2,499</p>
           <p class="plan-text">per month</p>
           <ul class="list">
             <li class="list-item">
@@ -294,12 +289,66 @@
           </p>
         </div>
       </div>
-
-
-
-    </section>
     </section>
   </main>
+  <footer class="footer">
+    <div class="container grid grid-footer">
+      <div class="logo-col">
+        <a href="#" class="footer-logo">
+          <img src="img/logo.jpg" alt="Nutrifood logo" class="logo" />
+        </a>
+
+        <ul class="social-links">
+          <li>
+            <a class="footer-link" href="#">
+              <ion-icon class="social-logo" name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+          <li>
+            <a class="footer-link" href="#">
+              <ion-icon class="social-logo" name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+          <li>
+            <a class="footer-link" href="#">
+              <ion-icon class="social-logo" name="logo-whatsapp"></ion-icon>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="address-col">
+        <p class="footer-heading">Contact us</p>
+        <address class="contacts">
+          <p class="address">
+            J4RC+MXP,Block G,Rajouri Garden,Banglore,110023
+          </p>
+          <p>
+            <a class="footer-link" href="tel:+91 215-5379-873">+91 215-5379-873</a><br />
+            <a class="footer-link" href="mailto:hello@nutrifood.com">hello@nutrifood.com</a>
+          </p>
+        </address>
+      </div>
+      <nav class="nav-col">
+        <p class="footer-heading">Account</p>
+        <ul class="footer-nav">
+          <li><a class="footer-link" href="#">Create Account</a></li>
+          <li><a class="footer-link" href="#">Sign in</a></li>
+          <li><a class="footer-link" href="#">IOS app</a></li>
+          <li><a class="footer-link" href="#">Android app</a></li>
+        </ul>
+      </nav>
+
+      <nav class="nav-col">
+        <p class="footer-heading">Resources</p>
+        <ul class="footer-nav">
+          <li><a class="footer-link" href="#">Recipe directory</a></li>
+          <li><a class="footer-link" href="#">Help center</a></li>
+          <li><a class="footer-link" href="#">Privacy & terms</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
