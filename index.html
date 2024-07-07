@@ -1,4 +1,4 @@
-<!DOCTYPE html>  
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -130,6 +130,9 @@
               <li class="meal-attribute">Nutriscore 84</li>
               <li class="meal-attribute">4.5 rating</li>
             </ul>
+            <button class="add-to-cart-btn" onclick="addToCart(this)">
+              <ion-icon name="cart-outline"></ion-icon> Add to Cart
+            </button>
           </div>
         </div>
 
@@ -148,6 +151,9 @@
               <li class="meal-attribute">Nutriscore 83</li>
               <li class="meal-attribute">4.7 rating</li>
             </ul>
+            <button class="add-to-cart-btn" onclick="addToCart(this)">
+              <ion-icon name="cart-outline"></ion-icon> Add to Cart
+            </button>
           </div>
         </div>
 
@@ -164,6 +170,9 @@
               <li class="meal-attribute">Nutriscore 85</li>
               <li class="meal-attribute">4.9 rating</li>
             </ul>
+            <button class="add-to-cart-btn" onclick="addToCart(this)">
+              <ion-icon name="cart-outline"></ion-icon> Add to Cart
+            </button>
           </div>
         </div>
 
@@ -181,12 +190,30 @@
               <li class="meal-attribute">Nutriscore 79</li>
               <li class="meal-attribute">4.7 rating</li>
             </ul>
+            <button class="add-to-cart-btn" onclick="addToCart(this)">
+              <ion-icon name="cart-outline"></ion-icon> Add to Cart
+            </button>
           </div>
         </div>
-      </div> 
+      </div>
       <div id="see-all">
         <a href="receipe.html">See All Receipes <ion-icon id="see-all-arrow" name="arrow-forward-circle"></ion-icon></a>
+      </div>
+
+
+      <div class="buy-container">
+        <button class="buy-btn" onclick="buyMeals()">Buy These Meals</button>
+      </div>
+
+      <!-- Modal -->
+      <!-- Modal -->
+      <div id="modal" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal()">&times;</span>
+          <p>You can only select up to 2 meals.</p>
         </div>
+      </div>
+
 
       <div class="diets">
         <h3 class="heading-tertiary">Works with any diet:</h3>
@@ -294,7 +321,7 @@
     </section>
   </main>
 
-  
+
 
   <footer class="footer">
     <div class="container grid grid-footer">
@@ -325,7 +352,7 @@
         <p class="footer-heading">Contact us</p>
         <address class="contacts">
           <p class="address">
-            J4RC+MXP,Block G,Rajouri Garden,Banglore,110023
+            J4RC+MXP,Block G,Rajouri Garden,Delhi,110023
           </p>
           <p>
             <a class="footer-link" href="tel:+91 215-5379-873">+91 215-5379-873</a><br />
@@ -355,6 +382,51 @@
       </nav>
     </div>
   </footer>
+  <script>
+    let selectedMeals = 0;
+
+    function addToCart(button) {
+      if (button.classList.contains('selected')) {
+        button.classList.remove('selected');
+        button.innerHTML = '<ion-icon name="cart-outline"></ion-icon> Add to Cart';
+        selectedMeals--;
+      } else {
+        if (selectedMeals < 2) {
+          button.classList.add('selected');
+          button.innerHTML = '<ion-icon name="cart-outline"></ion-icon> Added';
+          selectedMeals++;
+        } else {
+          showModal();
+        }
+      }
+    }
+
+    function showModal() {
+      document.getElementById("modal").style.display = "block";
+    }
+
+    function closeModal() {
+      document.getElementById("modal").style.display = "none";
+    }
+
+    window.onclick = function (event) {
+      if (event.target == document.getElementById("modal")) {
+        closeModal();
+      }
+    }
+
+    function buyMeals() {
+      if (selectedMeals === 0) {
+        alert("Please select at least one meal.");
+      } else if (selectedMeals === 1) {
+        alert("You have selected the Starter Plan.");
+        // Add your logic to handle the Starter Plan
+      } else if (selectedMeals === 2) {
+        alert("You have selected the Complete Meal Plan.");
+        // Add your logic to handle the Complete Meal Plan
+      }
+    }
+  </script>
 
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
