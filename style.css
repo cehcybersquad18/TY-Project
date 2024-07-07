@@ -9,7 +9,7 @@
  
 - priamry : #CADCFC
 ----shadows 
-
+ 
 
 
 */
@@ -282,7 +282,7 @@
   font-weight: 600;
   color: #333;
   margin-bottom: 1.6rem;
-}
+} 
 
 .plan-price span {
   font-size: 6.6rem;
@@ -344,9 +344,9 @@
   list-style: none;
 }
 
-.social-icon{
-  height: 2.4rem;
-  width: 2.4rem;
+.social-logo{
+  height: 3.2rem;
+  width: 3.2rem;
 }
 
 
