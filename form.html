@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meal Ordering System</title>
+  <script src="https://js.stripe.com/v3/"></script>
+</head>
+<body>
+  <form id="payment-form">
+    <input type="text" id="customer-name" placeholder="Name" required />
+    <input type="email" id="customer-email" placeholder="Email" required />
+    <button type="submit">Buy Meals</button>
+  </form>
+
+  <script>
+    const stripe = Stripe('your-stripe-publishable-key');
+    const form = document.getElementById('payment-form');
+
+    form.addEventListener('submit', async (event) => {
+      event.preventDefault();
+
+      const name = document.getElementById('customer-name').value;
+      const email = document.getElementById('customer-email').value;
+
+      const response = await fetch('/buy-meals', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          amount: 5000, // Amount in cents
+          currency: 'usd',
+          customerName: name,
+          customerEmail: email,
+        }),
+      });
+
+      const { clientSecret } = await response.json();
+
+      const result = await stripe.confirmCardPayment(clientSecret, {
+        payment_method: {
+          card: {
+            // Use Stripe.js to create a card element
+          },
+          billing_details: {
+            name: name,
+            email: email,
+          },
+        },
+      });
+
+      if (result.error) {
+        console.error('Payment failed:', result.error.message);
+      } else {
+        console.log('Payment succeeded:', result.paymentIntent);
+      }
+    });
+  </script>
+</body>
+</html>
