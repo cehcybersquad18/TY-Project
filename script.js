@@ -12,6 +12,6 @@ loginBtn.onclick = (()=>{
   loginText.style.marginLeft = "0%";
 });
 signupLink.onclick = (()=>{
-  signupBtn.click();
+  signupBtn.click(); 
   return false;
 });
