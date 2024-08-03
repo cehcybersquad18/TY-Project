@@ -322,7 +322,7 @@
 
 /* main {
   border-bottom: 2px solid #ccc;
-}
+} 
  */
 
 .footer{
@@ -513,9 +513,10 @@
   border: none;
   padding: 1rem 2rem;
   border-radius: 3rem;
-  font-size: rem;
+  font-size: 2rem;
   cursor: pointer;
   transition: background-color 0.3s;
+  color: black;
 }
 
 .buy-btn:hover {
